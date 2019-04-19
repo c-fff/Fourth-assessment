@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav-wrap{
+    background-color: #222222;
+    height: 28px;
+    line-height: 28px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+#nav-left{
+    width: 25%;
+}
+#nav-right{
+    width: 20%;
+}
+.nav-wrap p{
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+/*集成网站隐藏内容*/
+#nav_hiddenAll{
+    display: none;
+}
+.nav_hiddenSites{
+    width: 75.5%;
+    /*background-color: gray;*/
+    margin:0 auto;
+}
+.group_website{
+    float: left;
+    width: 18.3%;
+    /*background-color: pink; */
+    height: 80px;
+    padding: 40px 22px;
+}
+.group_website h3{
+    font-size: 14px;
+    cursor: pointer;
+}
+.group_website p{
+    padding-top: 10px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.alter{
+    color: #F66F6A;
+}
+.group_website img{
+    width: 4%;
+    height: 4%;
+    padding: 0 6px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.group_website img:hover {
+    padding: 0 20px;
+}
+/*区域语言隐藏内容*/
+.nav_hiddenEntire{
+    display: none;
+    /*background-color: slategrey;*/
+    margin: 0 auto;
+    padding-bottom: 45px;
+}
+.nav_write{
+    margin-left: 20px;
+    width: 18%;
+    /*background-color: pink;*/
+    float: left;
+    padding-top: 20px;
+}
+.nav_write p{
+    padding-top: 20px;
+}
+.nav_write span{
+    text-decoration: underline;
+}
+
+.nav_language{
+    width: 74%;
+    margin: 0 auto;
+}
+.nav_title{
+    padding-top: 30px;
+    padding-left: 9px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*nav的媒体查询*/
+@media screen and (max-width: 990px){
+    .nav-wrap{
+        display:none;
+    }
+}
+/*nav隐藏内容的媒体查询*/
+@media screen and (max-width: 990px){
+    .nav_hiddenSites{
+        display:none;
+    }
+}
