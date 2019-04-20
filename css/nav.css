@@ -13,10 +13,10 @@
     justify-content: space-around;
 }
 #nav-left{
-    width: 30%;
+    width: 23%;
 }
 #nav-right{
-    width: 15%;
+    width: 22%;
 }
 #nav-right span:hover{
     text-decoration: underline;
