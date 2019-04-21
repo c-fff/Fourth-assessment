@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="css/outer.css">
     <script src="jQuery/jquery-3.3.1.js"></script>
     <title>Title</title>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
 </head>
-<body onwheel="device()">
+<body>
 <!--顶部隐藏导航条-->
 <div class="nav-wrap">
         <div  id="nav-left" onclick="nav_wrap()">
@@ -88,32 +89,87 @@
         <div style="clear: both"></div>
     </div>
 </div>
+
 <!--悬浮导航栏-->
-<div id="outer-wrap" >
-    <div class="outer-content">
-        <div class="outer-img">
-            <img src="//www-file.huawei.com/-/media/corporate/images/home/logo/huawei_logo.png">
+<div id="outer-All" >
+    <div id="outer-wrap">
+        <div class="outer-content">
+            <div class="outer-img">
+                <img src="//www-file.huawei.com/-/media/corporate/images/home/logo/huawei_logo.png">
+            </div>
+            <div class="outer-middle">
+                <p id="out-middleOne"><img src="img/phone.png" align="absmiddle">手机、笔记本&平板..<img src="img/outer_down.png" align="absmiddle"></p>
+                <p id="out-middleTwo"><img src="img/scheme.png" align="absmiddle" style="width: 15%;">解决方案&服务<img src="img/outer_down.png" align="absmiddle"></p>
+                <img src="img/竖线 (2).png" id="_img" align="absmiddle">
+            </div>
+            <div class="outer-end">
+                <p>华为商城<img src="img/direction.png" align="absmiddle"></p>
+                <p>华为云<img src="img/direction.png" align="absmiddle"></p>
+                <img src="img/搜索.png" align="absmiddle">
+            </div>
+            <div style="clear: both"></div>
         </div>
-        <div class="outer-middle">
-            <p><img src="img/phone.png" align="absmiddle">手机、笔记本&平板..<img src="img/outer_down.png" align="absmiddle"></p>
-            <p style="    margin-left: 8%;"><img src="img/scheme.png" align="absmiddle" style="width: 15%;">解决方案&服务<img src="img/outer_down.png" align="absmiddle"></p>
-            <img src="img/竖线 (2).png" id="_img" align="absmiddle">
+    </div>
+<!--悬浮导航栏隐藏内容-->
+    <div class="External_hidden">
+        <div class="outer-hiddenAll">
+            <div class="outer-contentLeft">
+                <div class="outer-contentImg">
+                    <div class="outer-imgAdd">
+                        <img src="img/nav_p30pro_cn.jpg">
+                    </div>
+                    <div class="outer-add">
+                        <p>了解更多</p><img src="img/right.png">
+                    </div>
+                </div>
+                <div class="outer-contentDes">
+                    <div class="outer_phone">
+                        <img src="img/phone2.png">
+                        <p>手机</p>
+                    </div>
+                    <div class="outer_phone">
+                        <img src="img/pc.png">
+                        <p>pc</p>
+                    </div>
+                    <div class="outer_phone">
+                        <img src="img/pingban.png">
+                        <p>平板</p>
+                    </div>
+                    <div class="outer_phone">
+                        <img src="img/watch.png">
+                        <p>穿戴</p>
+                    </div>
+                    <div class="outer_phone">
+                        <img src="img/liten.png">
+                        <p>配件</p>
+                    </div>
+                    <div class="outer_phone">
+                        <img src="img/mobli.png">
+                        <p>智能家居<img src="img/small.png"  class="img_hidden"></p>
+                    </div>
+                    <div class="outer_bottom">
+                        <p>
+                            <span class="span-one">前往</span>
+                            <span id="span-two">consumer.huawei.com</span>
+                            <span class="span-one">查看全部产品</span>
+                            <i class="fa fa-external-link"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="outer-contentRig">
+                <div class="center">
+                    <h2>需要技术支持?</h2>
+                    <p>寄修服务<i class="fa fa-external-link"></i></p>
+                    <p>预约服务<i class="fa fa-external-link"></i></p>
+                    <p>保修状态查询<i class="fa fa-external-link"></i></p>
+                    <p>保修政策<i class="fa fa-external-link"></i></p>
+                    <p id="bottom">访问<span>技术支持中心</span><i class="fa fa-external-link"></i></p>
+                </div>
+            </div>
         </div>
-        <div class="outer-end">
-            <p>华为商城<img src="img/direction.png" align="absmiddle"></p>
-            <p>华为云<img src="img/direction.png" align="absmiddle"></p>
-            <img src="img/搜索.png" align="absmiddle">
-        </div>
-        <div style="clear: both"></div>
     </div>
 </div>
-<!--悬浮导航栏移动-->
-<script src="js/outer.js"></script>
-<!--悬浮导航栏隐藏内容-->
-<div class="outer-hiddenAll">
-
-</div>
-
 
 
 
@@ -124,7 +180,10 @@
 
 
 </body>
+<!--悬浮导航栏移动-->
+<script src="js/out.js"></script>
 <!--nav图片切换js-->
 <script src="js/nav.js"></script>
-
+<!--悬浮窗内容隐藏-->
+<script src="js/hiddenOrShow.js"></script>
 </html>
