@@ -85,7 +85,7 @@ body{
     cursor: pointer;
 }
 /*隐藏内容*/
-.External_hidden{
+#External_hidden{
     display: none;
 }
 .outer-hiddenAll{
