@@ -1,30 +1,24 @@
 // 显示隐藏内容
 (function hidden_show(){
-        var out_middleOne = document.getElementById("out-middleOne");
+        var out_middleAddone = document.getElementById("outer_middleAddone");
         var External_hidden = document.getElementById("External_hidden");
-         var rectObject = out_middleOne.getBoundingClientRect();
-         alert(rectObject.top);
+
+         // var rectObject = out_middleOne.getBoundingClientRect();
+         // alert(rectObject.top);
     //    获取鼠标坐标的位置
         document.onmousemove=function(e){
             var loc = "y:"+e.pageY;
-            out_middleOne.onmousemove=function(){
-                if(24<loc<104){
-                    External_hidden.style.display="block";
-                }
-            }
-            out_middleOne.onmouseout=function(){
-                // if(24<loc<104){
-                //     External_hidden.style.display="block";
-                // }
-                if (loc<24){
+            // console.log(loc);
+            out_middleAddone.onmousemove=function(){
+                if (0<loc<35){
+                    console.log("我可以隐藏");
                     External_hidden.style.display="none";
                 }
+                if(42<loc<104){
+                    console.log("我可以显示");
+                    External_hidden.style.display="block";
+                }
+            };
 
-            }
         }
     })();
-// $("#out-middleOne").mouseout(function(){
-//     $(".External_hidden").animate({
-//         display:'none'
-//     })
-// })

@@ -4,7 +4,7 @@
 }
 body{
     height: 2800px;
-    background-color: palegoldenrod;
+    /*background-color: palegoldenrod;*/
 }
 /*外部导航栏*/
 #outer-All{
@@ -37,6 +37,7 @@ body{
     width: 80%;
     height: 40%;
 }
+/*悬浮栏中间内容*/
 .outer-middle{
     /*background-color: #a8a8a4;*/
     height: 100%;
@@ -46,6 +47,14 @@ body{
     justify-content: space-around;
     width: 49%;
     overflow: hidden;
+}
+#outer_middleAddone{
+    height: 100%;
+    line-height: 75px;
+}
+#outer_middleAdd{
+    height: 100%;
+    line-height: 75px;
 }
 .outer-middle p{
     display: inline-block;
@@ -58,6 +67,7 @@ body{
 #outer-middleTwo{
     margin-left: 8%;
 }
+/*悬浮栏右边内容*/
 .outer-end{
     width: 35%;
     line-height: 70px;
