@@ -19,16 +19,18 @@ body{
     width: 100%;
     box-shadow: -1px 6px 4px #8e8e86;
 }
+/*悬浮导航栏居中内容*/
 .outer-content{
     margin: 0 auto;
-    width: 1080px;
-    background-color: #ffffff;
+    width: 72%;
+    /*background-color: #aaddff;*/
     height: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 .outer-img{
     /*background-color: #2a84a8;*/
     height:100%;
-    float: left;
     width: 16%;
     /*text-align: center;*/
     line-height: 89px;
@@ -37,45 +39,62 @@ body{
     width: 80%;
     height: 40%;
 }
-/*悬浮栏中间内容*/
-.outer-middle{
-    /*background-color: #a8a8a4;*/
-    height: 100%;
-    float: left;
+/*合并一个div*/
+.chunk_hidden{
+    /*background-color: #929292;*/
+    width: 55%;
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 49%;
-    overflow: hidden;
+}
+/*悬浮栏中间内容*/
+.outer-middle{
+    /*background-color: #b9b97c;*/
+    height: 100%;
+    /* width: 60%; */
+    flex: 1;
+    /*overflow: hidden;*/
+    display: flex;
+    justify-content: space-between;
 }
 #outer_middleAddone{
     height: 100%;
     line-height: 75px;
+    position: relative;
 }
 #outer_middleAdd{
     height: 100%;
     line-height: 75px;
+    position: relative;
 }
-.outer-middle p{
+#out-middleOne{
     display: inline-block;
     cursor: pointer;
     font-size: 18px;
 }
-.outer-middle p:hover{
+#out-middleOne:hover{
     color: #F66F6A;
 }
-#outer-middleTwo{
-    margin-left: 8%;
+#out-middleTwo{
+    display: inline-block;
+    cursor: pointer;
+    font-size: 18px;
+}
+#out-middleTwo:hover{
+    color: #F66F6A;
+}
+/*折叠内容*/
+#fold{
+    display: none;
 }
 /*悬浮栏右边内容*/
 .outer-end{
-    width: 35%;
+    width: 37%;
     line-height: 70px;
     /*background-color: peachpuff;*/
-    height:100%;
-    float: right;
+    height: 100%;
     display: flex;
-    align-items: center;
     justify-content: space-around;
 }
 #_img{
@@ -87,6 +106,7 @@ body{
     letter-spacing: 2px;
     font-size: 18px;
     cursor: pointer;
+    overflow: hidden;
 }
 .outer-end p:hover{
     color: #F66F6A;
@@ -94,13 +114,26 @@ body{
 .outer-end img{
     cursor: pointer;
 }
+/*end图片*/
+.outer-endImg{
+    display: flex;
+    align-items: center;
+    /*background-color: #5c2bff;*/
+    width: 10%;
+    justify-content: space-around;
+}
+.outer-endImg img{
+    cursor: pointer;
+    width: 27%;
+}
 /*隐藏内容*/
 #External_hidden{
-    display: none;
+    position: fixed;
+    width: 100%;
+    left: 0px;
 }
 .outer-hiddenAll{
-    width: 100%;
-    height:375px;
+    height: 420px;
     background-color: pink;
     display: flex;
     flex-direction: row;
@@ -128,7 +161,6 @@ body{
     cursor: pointer;
 }
 .outer-imgAdd{
-
     position: absolute;
     right: 12%;
     top: 10%;

@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="css/nav.css">
+
     <link rel="stylesheet" href="css/outer.css">
-    <script src="jQuery/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="css/nav.css">
+
     <title>Title</title>
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/select.css">
 </head>
 <body>
 <!--顶部隐藏导航条-->
@@ -92,84 +94,296 @@
 
 <!--悬浮导航栏-->
 <div id="outer-All" >
+    <!--悬浮导航栏外部内容-->
     <div id="outer-wrap">
         <div class="outer-content">
+            <!--图片内容-->
             <div class="outer-img">
                 <img src="//www-file.huawei.com/-/media/corporate/images/home/logo/huawei_logo.png">
             </div>
-            <div class="outer-middle">
-            <div id="outer_middleAddone">
-                <p id="out-middleOne"><img src="img/phone.png" align="absmiddle">手机、笔记本&平板..<img src="img/outer_down.png" align="absmiddle"></p>
-            </div>
-            <div id="outer_middleAdd">
-                <p id="out-middleTwo"><img src="img/scheme.png" align="absmiddle" style="width: 15%;">解决方案&服务<img src="img/outer_down.png" align="absmiddle"></p>
-            </div>
-                <img src="img/竖线 (2).png" id="_img" align="absmiddle">
-            </div>
-            <div class="outer-end">
-                <p>华为商城<img src="img/direction.png" align="absmiddle"></p>
-                <p>华为云<img src="img/direction.png" align="absmiddle"></p>
-                <img src="img/搜索.png" align="absmiddle">
-            </div>
-            <div style="clear: both"></div>
-        </div>
-    </div>
-<!--悬浮导航栏隐藏内容-->
-    <div id="External_hidden">
-        <div class="outer-hiddenAll">
-            <div class="outer-contentLeft">
-                <div class="outer-contentImg">
-                    <div class="outer-imgAdd">
-                        <img src="img/nav_p30pro_cn.jpg">
+            <!--叙述内容-->
+            <div class="chunk_hidden">
+                <div class="outer-middle">
+                    <div id="outer_middleAddone" >
+                        <p id="out-middleOne"><img src="img/phone.png" align="absmiddle">手机、笔记本&平板..
+                            <img src="img/outer_down.png" align="absmiddle"></p>
+                       <!--111111111111111111111111-->
+                        <div id="External_hidden" style="display: block">
+                            <div class="outer-hiddenAll">
+                                <div class="outer-contentLeft">
+                                    <div class="outer-contentImg">
+                                        <div class="outer-imgAdd">
+                                            <img src="img/nav_p30pro_cn.jpg">
+                                        </div>
+                                        <div class="outer-add">
+                                            <p>了解更多</p><img src="img/right.png">
+                                        </div>
+                                    </div>
+                                    <div class="outer-contentDes">
+                                        <div class="outer_phone">
+                                            <img src="img/phone2.png">
+                                            <p>手机</p>
+                                        </div>
+                                        <div class="outer_phone">
+                                            <img src="img/pc.png">
+                                            <p>pc</p>
+                                        </div>
+                                        <div class="outer_phone">
+                                            <img src="img/pingban.png">
+                                            <p>平板</p>
+                                        </div>
+                                        <div class="outer_phone">
+                                            <img src="img/watch.png">
+                                            <p>穿戴</p>
+                                        </div>
+                                        <div class="outer_phone">
+                                            <img src="img/liten.png">
+                                            <p>配件</p>
+                                        </div>
+                                        <div class="outer_phone">
+                                            <img src="img/mobli.png">
+                                            <p>智能家居<img src="img/small.png"  class="img_hidden"></p>
+                                        </div>
+                                        <div class="outer_bottom">
+                                            <p>
+                                                <span class="span-one">前往</span>
+                                                <span id="span-two">consumer.huawei.com</span>
+                                                <span class="span-one">查看全部产品</span>
+                                                <i class="fa fa-external-link"></i>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="outer-contentRig">
+                                    <div class="center">
+                                        <h2>需要技术支持?</h2>
+                                        <p>寄修服务<i class="fa fa-external-link"></i></p>
+                                        <p>预约服务<i class="fa fa-external-link"></i></p>
+                                        <p>保修状态查询<i class="fa fa-external-link"></i></p>
+                                        <p>保修政策<i class="fa fa-external-link"></i></p>
+                                        <p id="bottom">访问<span>技术支持中心</span><i class="fa fa-external-link"></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="outer-add">
-                        <p>了解更多</p><img src="img/right.png">
+                    <div id="outer_middleAdd">
+                        <p id="out-middleTwo"><img src="img/scheme.png" align="absmiddle" style="width: 15%;">解决方案&服务
+                            <img src="img/outer_down.png" align="absmiddle"></p>
+                        <!--22222222222222222222222222-->
+                        <!--中间第二栏隐藏内容-->
+                        <!--选项卡标题-->
+                        <div id="tab_All">
+                            <div id="nav">
+                                <ul>
+                                    <li class="act">企业用户</li>
+                                    <li>运营商用户</li>
+                                    <li>华为云服务</li>
+                                </ul>
+                            </div>
+                            <!--选项卡内容部分HTML代码-->
+                            <div id="container">
+                                <div class="tab">
+                                    <div class="tab_left">
+                                        <div class="tab_contentLeft" id="excursion">
+                                            <h3>产品</h3>
+                                            <p>交换机<i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                            <p>路由器<i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                            <p> WLAN<i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                            <p>存储<i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                            <p><span class="span_Add">查看全部</span><i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                        </div>
+                                        <div class="tab_contentLeft">
+                                            <h3>解决方案</h3>
+                                            <p>云数据中心<i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                            <p>企业网络<i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                            <p> 智能计算<i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                            <p>各行业解决方案<i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                            <p><span class="span_Add">查看全部</span><i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+
+                                        </div>
+                                        <div class="tab_contentLeft">
+                                            <h3>服务</h3>
+                                            <p>培训与认证<i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                            <p>行业云使能服务<i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                            <p> 提升服务<i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                            <p>客户支持服务<i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                            <p><span class="span_Add">查看全部</span><i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+
+                                        </div>
+                                        <div class="tab_contentLeft">
+                                            <h3>合作伙伴</h3>
+                                            <p>查找合作伙伴<i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                            <p>成为合作伙伴<i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                            <p>合作伙伴支持<i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                            <p> OpenLab<i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                            <p><span class="span_Add">查看全部</span><i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                        </div>
+                                        <div class="tab_bottom">
+                                            <p>
+                                                <span class="span-one">前往</span>
+                                                <span id="span-two">consumer.huawei.com</span>
+                                                <span class="span-one">查看全部产品</span>
+                                                <i class="fa fa-external-link"></i>
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <div class="tab_right">
+                                        <div class="tab_rightAdd">
+                                            <h3>
+                                                需要技术支持？
+                                                <img src="img/smallphoto.png" align="absmiddle" >
+                                            </h3>
+                                            <p>产品支持
+                                                <img src="img/smallphoto.png" align="absmiddle">
+                                            </p>
+                                            <p>软件下载
+                                                <img src="img/smallphoto.png" align="absmiddle">
+                                            </p>
+                                            <p>技术论坛
+                                                <img src="img/smallphoto.png" align="absmiddle">
+                                            </p>
+                                            <p>工具
+                                                <img src="img/smallphoto.png" align="absmiddle">
+                                            </p>
+                                            <p style="padding-top: 30%;">前往<span class="span_Add">技术支持中心</span>
+                                                <img src="img/smallphoto.png" align="absmiddle">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div style="clear: both"></div>
+                                </div>
+                                <div class="tab">
+                                    <div class="tab_left">
+                                        <div class="tab_middleLeft">
+                                            <div class="_middle">
+                                                <h3>合作伙伴</h3>
+                                                <p>查找合作伙伴<i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                                <p>成为合作伙伴<i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                                <p>合作伙伴支持<i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                                <p> OpenLab<i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                                <p><span class="span_Add">查看全部</span><i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                            </div>
+                                            <div class="_middle">
+                                                <h3>合作伙伴</h3>
+                                                <p>查找合作伙伴<i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                                <p>成为合作伙伴<i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                                <p>合作伙伴支持<i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                                <p> OpenLab<i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                                <p><span class="span_Add">查看全部</span><i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                            </div>
+                                            <div class="_middle">
+                                                <h3>合作伙伴</h3>
+                                                <p>查找合作伙伴<i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                                <p>成为合作伙伴<i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                                <p>合作伙伴支持<i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                                <p> OpenLab<i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                                <p><span class="span_Add">查看全部</span><i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                            </div>
+                                        </div>
+                                        <div class="tab_bottom">
+                                            <p>
+                                                <span class="span-one">前往</span>
+                                                <span id="span-two">consumer.huawei.com</span>
+                                                <span class="span-one">查看全部产品</span>
+                                                <i class="fa fa-external-link"></i>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="tab_right">
+                                        <div class="tab_rightAdd">
+                                            <h3>
+                                                需要技术支持？
+                                                <img src="img/smallphoto.png" align="absmiddle" >
+                                            </h3>
+                                            <p>产品支持
+                                                <img src="img/smallphoto.png" align="absmiddle">
+                                            </p>
+                                            <p>软件下载
+                                                <img src="img/smallphoto.png" align="absmiddle">
+                                            </p>
+                                            <p>技术论坛
+                                                <img src="img/smallphoto.png" align="absmiddle">
+                                            </p>
+                                            <p>工具
+                                                <img src="img/smallphoto.png" align="absmiddle">
+                                            </p>
+                                            <p>前往<span class="span_Add">技术支持中心</span>
+                                                <img src="img/smallphoto.png" align="absmiddle">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div style="clear: both"></div>
+                                </div>
+                                <div class="tab">
+                                    <div class="tab_left">
+                                        <div class="tab_middleLeft">
+                                        <div class="_middle">
+                                            <img src="img/cloud.jpg" style="border-radius: 7px;margin-top: 10%;">
+                                            <p id="_middleP">
+                                                华为云+智能,见未来>
+                                            </p>
+
+                                        </div>
+                                        <div class="_middle">
+                                            <h3>合作伙伴</h3>
+                                            <p>查找合作伙伴<i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                            <p>成为合作伙伴<i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                            <p>合作伙伴支持<i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                            <p> OpenLab<i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                            <p><span class="span_Add">查看全部</span><i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                        </div>
+                                        <div class="_middle">
+                                            <h3>合作伙伴</h3>
+                                            <p>查找合作伙伴<i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                            <p>成为合作伙伴<i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                            <p>合作伙伴支持<i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                            <p> OpenLab<i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                            <p><span class="span_Add">查看全部</span><i class="fa fa-external-link" style="padding-left: 5%"></i></p>
+                                        </div>
+                                    </div>
+                                        <div class="tab_bottom">
+                                            <p>
+                                                查看全部华为云服务
+                                                <span id="span-two">consumer.huawei.com</span>
+                                                <i class="fa fa-external-link"></i>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="tab_right">
+                                        <div class="tab_rightAdd">
+                                            <h3>
+                                                需要技术支持？
+                                                <img src="img/smallphoto.png" align="absmiddle" >
+                                            </h3>
+                                            <p>服务保障体系
+                                                <img src="img/smallphoto.png" align="absmiddle">
+                                            </p>
+                                            <p>华为云社区
+                                                <img src="img/smallphoto.png" align="absmiddle">
+                                            </p>
+                                            <p style="    padding-top: 50%;">前往<span class="span_Add">帮助中心</span>
+                                                <img src="img/smallphoto.png" align="absmiddle">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div style="clear: both"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="img/竖线 (2).png" id="_img" align="absmiddle">
                     </div>
+                <div class="outer-end">
+                    <p>华为商城<img src="img/direction.png" align="absmiddle"></p>
+                    <p>华为云<img src="img/direction.png" align="absmiddle"></p>
                 </div>
-                <div class="outer-contentDes">
-                    <div class="outer_phone">
-                        <img src="img/phone2.png">
-                        <p>手机</p>
-                    </div>
-                    <div class="outer_phone">
-                        <img src="img/pc.png">
-                        <p>pc</p>
-                    </div>
-                    <div class="outer_phone">
-                        <img src="img/pingban.png">
-                        <p>平板</p>
-                    </div>
-                    <div class="outer_phone">
-                        <img src="img/watch.png">
-                        <p>穿戴</p>
-                    </div>
-                    <div class="outer_phone">
-                        <img src="img/liten.png">
-                        <p>配件</p>
-                    </div>
-                    <div class="outer_phone">
-                        <img src="img/mobli.png">
-                        <p>智能家居<img src="img/small.png"  class="img_hidden"></p>
-                    </div>
-                    <div class="outer_bottom">
-                        <p>
-                            <span class="span-one">前往</span>
-                            <span id="span-two">consumer.huawei.com</span>
-                            <span class="span-one">查看全部产品</span>
-                            <i class="fa fa-external-link"></i>
-                        </p>
-                    </div>
-                </div>
             </div>
-            <div class="outer-contentRig">
-                <div class="center">
-                    <h2>需要技术支持?</h2>
-                    <p>寄修服务<i class="fa fa-external-link"></i></p>
-                    <p>预约服务<i class="fa fa-external-link"></i></p>
-                    <p>保修状态查询<i class="fa fa-external-link"></i></p>
-                    <p>保修政策<i class="fa fa-external-link"></i></p>
-                    <p id="bottom">访问<span>技术支持中心</span><i class="fa fa-external-link"></i></p>
-                </div>
+            <!--end图片-->
+            </div>
+            <div class="outer-endImg">
+                <img src="img/搜索.png">
+                <img src="img/文档.png" id="fold">
             </div>
         </div>
     </div>
@@ -181,13 +395,14 @@
 
 
 
-
-
 </body>
+<script src="js/jquery-3.3.1.min.js"></script>
 <!--悬浮导航栏移动-->
 <script src="js/out.js"></script>
 <!--nav图片切换js-->
 <script src="js/nav.js"></script>
 <!--悬浮窗内容隐藏-->
 <script src="js/hiddenOrShow.js"></script>
+<!--选项卡内容-->
+<script src="js/select.js"></script>
 </html>

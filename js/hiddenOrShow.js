@@ -1,24 +1,27 @@
 // 显示隐藏内容
-(function hidden_show(){
-        var out_middleAddone = document.getElementById("outer_middleAddone");
-        var External_hidden = document.getElementById("External_hidden");
+// (function hiddenOrshow() {
+//     var External_hidden = document.getElementById("External_hidden");
+//     var tab_All = document.getElementById("tab_All");
+//
+//     if (External_hidden.style.display=='block'){
+//         tab_All.style.display=='none';
+//     }
+// })()
+//第二部分内容
 
-         // var rectObject = out_middleOne.getBoundingClientRect();
-         // alert(rectObject.top);
-    //    获取鼠标坐标的位置
-        document.onmousemove=function(e){
-            var loc = "y:"+e.pageY;
-            // console.log(loc);
-            out_middleAddone.onmousemove=function(){
-                if (0<loc<35){
-                    console.log("我可以隐藏");
-                    External_hidden.style.display="none";
-                }
-                if(42<loc<104){
-                    console.log("我可以显示");
-                    External_hidden.style.display="block";
-                }
-            };
-
-        }
-    })();
+function oneTest(){
+    $('#outer_middleAddone').mouseover(function () {
+        $('#External_hidden').show();
+    })
+    $('#outer_middleAddone').mouseout(function () {
+        $('#External_hidden').hide();
+    })
+}
+function tewTest(){
+    $('#outer_middleAdd').mouseover(function () {
+        $('#tab_All').show();
+    })
+    $('#outer_middleAdd').mouseout(function () {
+        $('#tab_All').hide();
+    })
+}

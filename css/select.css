@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#tab_All{
+    display: none;
+    position: fixed;
+    width: 100%;
+    left: 0px;
+}
+#nav{
+    height: 50px;
+    background-color: #F5F5F5;
+    line-height: 50px;
+}
+#nav ul{
+    display: block;
+    /*width: 60%;*/
+    /*background-color: #F66F6A;*/
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+}
+#container{
+    border-top: 1px solid #C6C6C6;
+    cursor: pointer;
+}
+#nav li{
+    list-style: none;
+    display: inline-block;
+    width: 100px;
+    color: #929292;
+}
+/*#vav li:hover{*/
+    /**/
+/*}*/
+.tab{
+    width: 100%;
+    height: 420px;
+    background-color: #929292;
+}
+
+.tab_left{
+    float: left;
+    width: 73%;
+    background-color: #F5F5F5;
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    /*align-items: center;*/
+}
+.tab_contentLeft{
+    width: 16%;
+    margin-left: 1%;
+    /*background-color: #8e8e86;*/
+    height: 78%;
+    margin-top: 1%;
+}
+#excursion{
+    margin-left: 7%;
+}
+.tab_contentLeft h3{
+    font-size: 20px;
+}
+.tab_contentLeft p{
+    height: 11%;
+}
+.tab_contentLeft p:hover{
+    text-decoration: underline;
+}
+.tab_contentLeft p:hover i{
+    display: inline-block;
+}
+.tab_contentLeft i{
+    display: none;
+}
+
+.span_Add{
+    color: #F66F6A;
+}
+.span_Add:hover{
+    text-decoration: underline;
+}
+.tab_right{
+    width: 27%;
+    float: left;
+    height: 100%;
+    background-color: #EBEBEB;
+}
+.tab_rightAdd{
+    margin: 0 auto;
+    /* background-color: #F66F6A; */
+    width: 80%;
+    height: 80%;
+}
+.tab_rightAdd h3{
+    padding-top: 4%;
+    font-size: 20px;
+}
+.tab_rightAdd p{
+    height: 11%;
+}
+.tab_rightAdd p:hover{
+    text-decoration: underline;
+}
+.tab_rightAdd img{
+    display: none;
+}
+.tab_rightAdd p:hover img{
+    display: inline-block;
+}
+
+.tab_bottom #span-two:hover{
+    color: #F66F6A;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.tab_bottom .span-one:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.tab_bottom i{
+    opacity: 0;
+}
+.tab_bottom:hover i{
+    opacity: 1;
+}
+/*第二部分左边内容*/
+.tab_middleLeft{
+    width: 71%;
+    /*background-color: #F66F6A;*/
+    height: 85%;
+    display: flex;
+    margin-left: 11%;
+    justify-content: space-between;
+    align-items: center;
+}
+._middle{
+    width: 30%;
+    height: 80%;
+    margin-top: -38px;
+    /*background-color: #8e8e86;*/
+}
+._middle h3{
+    font-size: 20px;
+}
+._middle p{
+    height: 11%;
+}
+._middle p:hover{
+    text-decoration: underline;
+}
+._middle p:hover i{
+    display: inline-block;
+}
+._middle i{
+    display: none;
+}
+.middle_bottom{
+    margin-top: -6%;
+}
+
+/*第三部分左边内容*/
+#_middleP{
+    font-size: 20px;
+}
