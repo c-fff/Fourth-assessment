@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="css/outer.css">
+    <!--第二个页面显示-->
+    <script src="js/fold.js"></script>
     <link rel="stylesheet" href="css/additional_page.css">
     <link rel="stylesheet" href="css/nav.css">
 
     <title>Title</title>
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="css/select.css">
+
 </head>
 <body>
 <!--顶部隐藏导航条-->
@@ -383,15 +386,56 @@
             </div>
             <div class="outer-endImg">
                 <img src="img/搜索.png">
-                <img src="img/文档.png" id="fold">
+                <img src="img/wendang.png" id="fold" onclick="addition()">
             </div>
         </div>
     </div>
 </div>
 <!--第二个页面-->
-<div class="additional_page">
+<div id="additional_page">
    <!--整体-->
     <div class="articleAll">
+        导航隐藏内容
+        <div class="foot_contentLe">
+            <div class="first-content">
+                <h3>集团网站</h3>
+                <p>公司信息，社会责任，新闻，展会活动，行业洞察等等</p>
+            </div>
+            <div class="first-content">
+                <h3 class="alone">个人用户</h3>
+                <p>手机，PC和平板，穿戴设备等个人及家用产品</p>
+            </div>
+            <div class="first-content">
+                <h3 class="alone">企业用户</h3>
+                <p>企业商用产品、解决方案和云服务</p>
+            </div>
+            <div class="first-content">
+                <h3 class="alone">运营商用户</h3>
+                <p>运营商网络解决方案、产品及服务</p>
+            </div>
+        </div>
+        <div class="foot_contentRi">
+            <div class="first-content">
+                <h3>集团网站</h3>
+                <p>公司信息，社会责任，新闻，展会活动，行业洞察等等</p>
+            </div>
+            <div class="first-content">
+                <h3 class="alone">个人用户</h3>
+                <p>手机，PC和平板，穿戴设备等个人及家用产品</p>
+            </div>
+            <div class="first-content">
+                <h3 class="alone">企业用户</h3>
+                <p>企业商用产品、解决方案和云服务</p>
+            </div>
+            <div class="first-content">
+                <h3 class="alone">运营商用户</h3>
+                <p>运营商网络解决方案、产品及服务</p>
+            </div>
+            <div class="first-content">
+                <h3 class="alone">运营商用户</h3>
+                <p>运营商网络解决方案、产品及服务</p>
+            </div>
+        </div>
         <!--菜单-->
         <div class="article">
             <!--两个下拉菜单-->
@@ -504,16 +548,22 @@
                 <p>登录</p>
             </div>
         </div>
-    </div>
 
+    </div>
 </div>
 <!--底部固定导航-->
-<div class="foot">
-    <div class="foot_left">
-        <p></p>
-    </div>
-    <div class="foot_right">
-        <p></p>
+<div class="foot_All">
+    <div class="foot">
+        <div id="foot_left">
+            <p onclick="additionLe()">集团网站 <img src="img/nav_down.png" align="absmiddle"></p>
+        </div>
+        <div id="foot_right">
+            <p onclick="additionRi()">
+                <img src="img/nav_Inter.png"  align="absmiddle">
+                <span>选择区域/语言</span>
+                <img src="img/nav_down.png" align="absmiddle">
+            </p>
+        </div>
     </div>
 </div>
 
@@ -533,4 +583,5 @@
 <script src="js/select.js"></script>
 <!--移动端内容-->
 <script src="js/additional_page.js"></script>
+
 </html>

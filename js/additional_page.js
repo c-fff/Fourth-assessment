@@ -10,3 +10,4 @@ function additionalT(){
         $(".glide_hiddenTwo").slideToggle(500);
     })
 }
+//折叠点击图片切换

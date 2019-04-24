@@ -1,12 +1,4 @@
-// 显示隐藏内容
-// (function hiddenOrshow() {
-//     var External_hidden = document.getElementById("External_hidden");
-//     var tab_All = document.getElementById("tab_All");
-//
-//     if (External_hidden.style.display=='block'){
-//         tab_All.style.display=='none';
-//     }
-// })()
+
 //第二部分内容
 
 function oneTest(){

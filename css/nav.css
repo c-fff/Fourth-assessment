@@ -147,15 +147,18 @@
     .chunk_hidden{
         visibility: hidden;
     }
-    /*第二页面显示*/
-    .additional_page{
-        display: block;
-    }
+    /*!*第二页面显示*!*/
+    /*.additional_page{*/
+        /*display: block;*/
+    /*}*/
     /*悬浮导航固定*/
     #outer-All{
         top: 0px;
         position: fixed;
     }
-
+    /*第二页面底部黑条显示*/
+    .foot_All{
+        display: block;
+    }
 
 }

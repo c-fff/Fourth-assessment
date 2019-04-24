@@ -2,10 +2,10 @@
     margin: 0;
     padding: 0;
 }
-/*body{*/
-    /*height: 2800px;*/
-    /*!*background-color: palegoldenrod;*!*/
-/*}*/
+body{
+    height: 2800px;
+    /*background-color: palegoldenrod;*/
+}
 /*外部导航栏*/
 #outer-All{
     position: fixed;
