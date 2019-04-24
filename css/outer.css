@@ -2,10 +2,10 @@
     margin: 0;
     padding: 0;
 }
-body{
-    height: 2800px;
-    /*background-color: palegoldenrod;*/
-}
+/*body{*/
+    /*height: 2800px;*/
+    /*!*background-color: palegoldenrod;*!*/
+/*}*/
 /*外部导航栏*/
 #outer-All{
     position: fixed;
@@ -47,6 +47,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    overflow:hidden;
 }
 /*悬浮栏中间内容*/
 .outer-middle{
@@ -59,6 +60,7 @@ body{
     justify-content: space-between;
 }
 #outer_middleAddone{
+    width: 42%;
     height: 100%;
     line-height: 75px;
     position: relative;

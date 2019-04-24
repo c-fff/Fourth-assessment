@@ -129,11 +129,13 @@
 
 /*nav的媒体查询*/
 @media screen and (max-width: 990px){
+    /*图标显示*/
     #fold{
         display: block;
     }
+    /*黑色导航条*/
     .nav-wrap{
-        display:none;
+        visibility: hidden;
     }
     .nav_hiddenSites{
         display:none;
@@ -141,8 +143,18 @@
     .nav_hiddenEntire{
         display:none;
     }
+    /*悬浮导航中间内容消失*/
     .chunk_hidden{
         visibility: hidden;
+    }
+    /*第二页面显示*/
+    .additional_page{
+        display: block;
+    }
+    /*悬浮导航固定*/
+    #outer-All{
+        top: 0px;
+        position: fixed;
     }
 
 
