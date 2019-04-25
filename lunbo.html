@@ -41,6 +41,7 @@
         .num .active{background-color: #fff;}
     </style>
     <script src="http://apps.bdimg.com/libs/jquery/1.8.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/additional_page.css">
 </head>
 <body>
 <div class="banner">
@@ -70,7 +71,8 @@
         $('.num li').first().addClass('active'); //给第一个圆点添加样式
 
         var firstimg=$('.img li').first().clone(); //复制第一张图片
-        $('.img').append(firstimg).width($('.img li').length*($('.img img').width())); //将第一张图片放到最后一张图片后，设置ul的宽度为图片张数*图片宽度
+        $('.img').append(firstimg).width($('.img li').length*($('.img img').width()));
+        //将第一张图片放到最后一张图片后，设置ul的宽度为图片张数*图片宽度
 
 
         // 下一个按钮
@@ -115,7 +117,7 @@
             $('.num li').eq(_index).addClass('active').siblings().removeClass('active');
         })
 
-        //定时器自动播放
+//        定时器自动播放
         timer=setInterval(function(){
             i++;
             if (i==$('.img li').length) {
@@ -130,8 +132,8 @@
                 $('.num li').eq(i).addClass('active').siblings().removeClass('active');
             }
         },1000)
-
-        //鼠标移入，暂停自动播放，移出，开始自动播放
+//
+//        //鼠标移入，暂停自动播放，移出，开始自动播放
         $('.banner').hover(function(){
             clearInterval(timer);
         },function(){

@@ -1,0 +1,23 @@
+.carousel _All{
+    height: 100%;
+    position: relative;
+}
+
+.suspension_Add{
+    width: 1128px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    height: 200px;
+    bottom: -6%;
+    left: 12%;
+    position: absolute;
+    box-shadow: 4px 7px 25px #EBEBEB;
+    display: flex;
+    justify-content: space-around;
+    /* z-index: 999; */
+}
+.personage{
+    width: 27%;
+    height: 100%;
+    background-color: #F66F6A;
+}
