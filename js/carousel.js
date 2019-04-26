@@ -53,45 +53,45 @@ $(function(){
         //给相应的按钮添加上css
         $('.mun li').eq(_index).addClass('active').siblings().removeClass('active');
     })
-//    通过定时器自动播放
-    timer=setInterval(function(){
-        i++;
-        //如果等于图片的张数回到第一张
-        if (i==$('.img li').length){
-            i=1;
-            $('.img li').css({left:0});
-        };
-        //停止动画时
-        $('.img').stop().animate({left:-i*1366},300);
-        // 如果到第三张图片时回到第一张图片
-        if (i==$('.img li').length-1)
-        {
-               $('.num li').eq(0).addClass('active').siblings().removeClass('active');
-        }
-           //若不到第三张时每个图片对应按钮该有的样式
-        else{
-               $('.num li').eq(i).addClass('active').siblings().removeClass('active');
-        }
-    },1000);
-//鼠标移入时暂停动画移除时动画开始
-    $('.carousel').hover(function(){
-        clearInterval(timer);
-    },function(){
-        timer=setInterval(function(){
-               i++;
-               if (i==$('.img li').length) {
-                   i=1;
-                   $('.img').css({left:0});
-               };
-
-               $('.img').stop().animate({left:-i*1366},300);
-               if (i==$('.img li').length-1) {
-                   $('.num li').eq(0).addClass('active').siblings().removeClass('active');
-               }else{
-                   $('.num li').eq(i).addClass('active').siblings().removeClass('active');
-               }
-           },1000)
-       })
+// //    通过定时器自动播放
+//     timer=setInterval(function(){
+//         i++;
+//         //如果等于图片的张数回到第一张
+//         if (i==$('.img li').length){
+//             i=1;
+//             $('.img li').css({left:0});
+//         };
+//         //停止动画时
+//         $('.img').stop().animate({left:-i*1366},300);
+//         // 如果到第三张图片时回到第一张图片
+//         if (i==$('.img li').length-1)
+//         {
+//                $('.num li').eq(0).addClass('active').siblings().removeClass('active');
+//         }
+//            //若不到第三张时每个图片对应按钮该有的样式
+//         else{
+//                $('.num li').eq(i).addClass('active').siblings().removeClass('active');
+//         }
+//     },1000);
+// //鼠标移入时暂停动画移除时动画开始
+//     $('.carousel').hover(function(){
+//         clearInterval(timer);
+//     },function(){
+//         timer=setInterval(function(){
+//                i++;
+//                if (i==$('.img li').length) {
+//                    i=1;
+//                    $('.img').css({left:0});
+//                };
+//
+//                $('.img').stop().animate({left:-i*1366},300);
+//                if (i==$('.img li').length-1) {
+//                    $('.num li').eq(0).addClass('active').siblings().removeClass('active');
+//                }else{
+//                    $('.num li').eq(i).addClass('active').siblings().removeClass('active');
+//                }
+//            },1000)
+//        })
 
 });
 

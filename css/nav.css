@@ -2,6 +2,15 @@
     margin: 0;
     padding: 0;
 }
+/*主页面整体内容*/
+#layout{
+    height: 100%;
+}
+
+
+
+
+/*导航*/
 .nav-wrap{
     background-color: #222222;
     height: 28px;
@@ -157,8 +166,12 @@
         position: fixed;
     }
     /*第二页面底部黑条显示*/
-    .foot_All{
-        display: block;
+    /*.foot_All{*/
+        /*display: block;*/
+    /*}*/
+    /*图片换行*/
+    .newline_picturesO{
+        width: 990px;
     }
 
 }

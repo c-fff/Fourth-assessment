@@ -169,7 +169,7 @@
     text-decoration: underline;
 }
 /*底部固定导航*/
-.foot_All{
+#foot_All{
     display: none;
     position: fixed;
     z-index: 700;
@@ -228,8 +228,10 @@
     display: none;
     top: 16%;
     width: 100%;
-    height: 286px;
+    height: 100%;
     position: fixed;
     z-index: 600;
     background-color: #FFFFFF;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }

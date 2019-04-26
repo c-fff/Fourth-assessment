@@ -1,15 +1,17 @@
+/*轮播中漂浮内容*/
 .carousel _All{
     height: 100%;
     position: relative;
 }
 
 .suspension_Add{
-    width: 1128px;
+    width: 80%;
     background-color: #FFFFFF;
     border-radius: 8px;
-    height: 200px;
+    height: 26%;
     bottom: -6%;
-    left: 12%;
+    overflow: hidden;
+    margin-left: 9%;
     position: absolute;
     box-shadow: 4px 7px 25px #EBEBEB;
     display: flex;
@@ -17,7 +19,99 @@
     /* z-index: 999; */
 }
 .personage{
-    width: 27%;
+    width: 33%;
     height: 100%;
-    background-color: #F66F6A;
+    /*background-color: #F66F6A;*/
+    display: flex;
+    justify-content: space-around;
+}
+.personage_Le{
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    padding-top: 8%;
+}
+.personage_Ri{
+    width:66%;
+    height: 100%;
+}
+.personage_Ri h2{
+    padding-top: 18%;
+}
+.personage_Ri p{
+    font-size: 18px;
+    color: #B3B3B3;
+}
+/*.personage_border{*/
+    /*border-left:1px solid #B3B3B3;*/
+    /*height: 100%;*/
+/*}*/
+/*换行图片*/
+.newline_pictures{
+    background-color: cadetblue;
+    margin: 13% auto;
+    width: 1250px;
+    height: 641px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+.newline_picturesO{
+    width: 60%;
+    background-color: #929292;
+    height: 100%;
+}
+.newline_blue{
+    width: 76%;
+    height:80%;
+    background-color: #3CBEDE;
+}
+.newline_blue:hover{
+    cursor: pointer;
+}
+.newline_blue:hover #newline_pT img{
+    margin-left: 10%;
+    cursor: pointer;
+}
+.newline_blue:hover .newline_ img{
+    margin-top: -10%;
+}
+/*中间文字*/
+.newline_center{
+    /*background-color: palegoldenrod;*/
+    width: 15%;
+    top: 14%;
+    left: 12%;
+    position: absolute;
+    height: 50%;
+}
+#newline_pO{
+    font-size: 18px;
+    color: #FFFFFF;
+    padding-top: 6%;
+}
+#newline_pT{
+    font-size: 25px;
+    color: #FFFFFF;
+    padding-top: 37%;
+}
+#newline_pT img{
+    margin-left: 4%;
+}
+#newline_pS{
+    font-size: 12px;
+    padding-top: 34%;
+}
+/*手机图片*/
+.newline_{
+    position: absolute;
+    top: 14%;
+    right: 40%;
+    width:30%;
+}
+/*右边图片*/
+.newline_picturesT{
+    width: 300px;
+    height:100%;
+    background-color: #3CBEDE;
 }
