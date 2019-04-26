@@ -22,17 +22,20 @@ function addition(){
         }else
             {
             fold.src="img/wendang.png";
-        }
+                //实现点击图片副页面关闭且回到主页面
+            //回到主页面
+                var layout = document.getElementById("layout");
+                layout.style.display="block";
+            //    关掉副页面
+                var additional_page = document.getElementById("additional_page");
+                additional_page.style.display="none";
+                //    关掉黑色导航
+                var foot_All = document.getElementById("foot_All");
+                foot_All.style.display="none";
+             }
+
 
 
 })
 }
-//实现点击图片副页面关闭且回到主页面
-function back(){
-    //回到主页面
-    var layout = document.getElementById("layout");
-    layout.style.display="block";
-//    关掉副页面
-    var additional_page = document.getElementById("additional_page");
-    additional_page.style.display="none";
-}
+
