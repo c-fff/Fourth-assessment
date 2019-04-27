@@ -33,9 +33,6 @@ function addition(){
                 var foot_All = document.getElementById("foot_All");
                 foot_All.style.display="none";
              }
-
-
-
-})
+        })
 }
 
