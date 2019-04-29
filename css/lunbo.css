@@ -5,6 +5,10 @@
 ul{
     list-style: none;
 }
+/*.carousel_All{*/
+    /*position: absolute;*/
+    /*height: 100%;*/
+/*}*/
 .carousel{
     position: relative;
     overflow: hidden;

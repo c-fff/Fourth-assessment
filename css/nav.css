@@ -38,6 +38,8 @@
 /*集成网站隐藏内容*/
 #nav_hiddenAll{
     display: none;
+    /*position:fixed;*/
+    /*z-index: 999;*/
 }
 .nav_hiddenSites{
     width: 75.5%;
@@ -75,10 +77,12 @@
     padding: 0 20px;
 }
 /*区域语言隐藏内容*/
-.nav_hiddenEntire{
+#nav_hiddenEntire{
     display: none;
     margin: 0 auto;
     padding-bottom: 45px;
+    /*position:relative;*/
+    /*z-index: 999;*/
 }
 .nav_write{
     width: 18%;
@@ -100,14 +104,6 @@
 .nav_title{
     padding-top: 30px;
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -165,14 +161,60 @@
         top: 0px;
         position: fixed;
     }
-    /*第二页面底部黑条显示*/
-    /*.foot_All{*/
-        /*display: block;*/
-    /*}*/
-    /*图片换行*/
-    .newline_picturesO{
-        width: 990px;
+    /*换行图片*/
+    .newline_pictures{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 1200px;
     }
+    /*第一幅图片*/
+    .newline_picturesO{
+        width: 100%;
+        height: 45%;
+    }
+    /*第一幅图片内容*/
+    .newline_blue{
+        width: 95%;
+        height: 80%;
+        position: relative;
+        background-color: #3CBEDE;
+    }
+    .newline_center{
+        /*width: 38%;*/
+        top: 6%;
+        right: 10%;
+        /* left: 12%; */
+        position: absolute;
+        /* height: 50%; */
+    }
+    .newline_{
+        position: absolute;
+        /* top: 14%; */
+        right: 2%;
+        width: 30%;
+    }
+    /*第二幅图片*/
+    .newline_picturesT{
+        margin: 0 auto;
+        width: 50%;
+        height: 45%;
+    }
+    /*第二幅图片内容*/
+    .joint_All{
+        width: 100%;
+        height: 100%;
+        /*background-color: #DDE6ED;*/
+        /*border-radius: 6px;*/
+        /*cursor: pointer;*/
+    }
+    #joint_contentP{
+        display: none;
+    }
+    /*折叠屏手机*/
+    /*.folding_Screen{*/
+        /*display: none;*/
+    /*}*/
 }
 /*换行图片*/
 @media screen and (max-width: 665px){
@@ -202,11 +244,12 @@
         float: right;
         display: inline-block;
     }
+    /*第二个图片*/
     .newline_picturesT {
         width: 100%;
         height: 600px;
         margin-top: 10%;
-        background-color: #3CBEDE;
+        /*background-color: #3CBEDE;*/
     }
     .newline_pictures{
         width: 100%;
@@ -222,6 +265,21 @@
     }
     #last_p{
         padding-top: 7px;
+    }
+    .folding_word p{
+        display: none;
+    }
+    .folding_word img{
+        width:100%;
+    }
+    .newline_{
+        right: 10%;
+    }
+
+/*折叠屏手机*/
+    .folding_Screen{
+        width: 100%;
+
     }
 }
 
