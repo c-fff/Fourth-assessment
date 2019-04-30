@@ -60,7 +60,7 @@ body{
     justify-content: space-between;
 }
 #outer_middleAddone{
-    width: 42%;
+    width: 25%;
     height: 100%;
     line-height: 75px;
     position: relative;
@@ -100,8 +100,8 @@ body{
     justify-content: space-around;
 }
 #_img{
-    width: 4%;
-    height: 100%;
+    width: 20%;
+    height: 75%;
 }
 .outer-end p{
     display: inline-block;
@@ -120,8 +120,10 @@ body{
 .outer-endImg{
     display: flex;
     align-items: center;
-    /*background-color: #5c2bff;*/
-    width: 10%;
+    /* background-color: #5c2bff; */
+    width: 6%;
+    margin-right: -4%;
+    /* margin-left: -5%; */
     justify-content: space-around;
 }
 .outer-endImg img{

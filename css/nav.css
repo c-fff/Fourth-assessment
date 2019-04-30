@@ -19,13 +19,16 @@
     width: 100%;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 #nav-left{
-    width: 23%;
+    width: 32%;
+    text-align: center;
+
 }
 #nav-right{
-    width: 321px;
+    width: 41%;
+    text-align: center;
 }
 #nav-right span:hover{
     text-decoration: underline;
@@ -110,28 +113,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*nav的媒体查询*/
 @media screen and (max-width: 990px){
     /*图标显示*/
@@ -147,6 +128,12 @@
     }
     .nav_hiddenEntire{
         display:none;
+    }
+    .outer-endImg{
+        width: 13%;
+    }
+    .outer-img{
+        width: 21%;
     }
     /*悬浮导航中间内容消失*/
     .chunk_hidden{
@@ -191,7 +178,7 @@
     .newline_{
         position: absolute;
         /* top: 14%; */
-        right: 2%;
+        right: 4%;
         width: 30%;
     }
     /*第二幅图片*/
@@ -211,18 +198,78 @@
     #joint_contentP{
         display: none;
     }
-    /*折叠屏手机*/
-    /*.folding_Screen{*/
-        /*display: none;*/
-    /*}*/
+    .folding_word>img{
+        width: 100%;
+        height: 100%;
+    }
+    /*图片*/
+    .story_content{
+        width: 100%;
+        flex-direction: column;
+    }
+    .story_book{
+        width: 100%;
+        height: 45%;
+        margin-top: -2%;
+    }
+    .story_img{
+        height: 21%;
+        right: 5%;
+        width: 29%;
+    }
+    .story_book:hover .story_img{
+        margin-left: 0;
+    }
+    .story_box{
+        margin-left: 0;
+        width: 100%;
+        height: 79%;
+        margin-top:0;
+    }
+    .story_{
+        top: 0%;
+        height: 0%;
+        /*background-color: slategrey;*/
+        width: 50%;
+        left: 2%;
+    }
+    #story_bottom{
+        display: none;
+    }
+    .story_ h3{
+        font-size: 16px;
+    }
+    ._Shuffling{
+        width: 100%;
+    }
 }
+/*2222222222*/
+/*@media screen and (max-width: 775px){*/
+    /*.story_content{*/
+        /*width: 100%;*/
+        /*flex-direction: column;*/
+    /*}*/
+    /*.story_book{*/
+        /*width: 100%;*/
+        /*height: 45%;*/
+        /*margin-top: 0%;*/
+    /*}*/
+    /*.story_img{*/
+        /*height: 21%;*/
+        /*right: 5%;*/
+        /*width: 29%;*/
+    /*}*/
+    /*.story_book:hover .story_img{*/
+        /*margin-left: 0;*/
+    /*}*/
+/*}*/
 /*换行图片*/
 @media screen and (max-width: 665px){
     /*悬浮块*/
     .suspension_Add{
         bottom: -8%;
-        margin-left: 0;
-        width: 100%;
+        margin-left: 12px;
+        width: 95%;
         height: 220px;
         flex-direction: column;
     }
@@ -238,7 +285,7 @@
         font-size: 20px;
         border-bottom: 1px solid black;
         /* width: 100%; */
-        width: 585px;
+        width: 500px;
     }
     .personage_Ri img{
         float: right;
@@ -273,7 +320,7 @@
         width:100%;
     }
     .newline_{
-        right: 10%;
+        right: 25%;
     }
 
 /*折叠屏手机*/
@@ -281,5 +328,126 @@
         width: 100%;
 
     }
+    /*新闻*/
+    .news{
+        width: 100%;
+        height: 1150px;
+    }
+    .news_All{
+        width: 100%;
+        /* flex-direction: column; */
+        /* justify-content: space-around; */
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .news_content01{
+        width: 100%;
+        height: 42%;
+        margin-left: 0;
+        /* left: 5%; */
+        /* margin-left: 6%; */
+        /*background-color: pink;*/
+    }
+    .news_content02{
+        width: 100%;
+        height: 39%;
+         margin-right: 0;
+        margin-left: 2%;
+        /*background-color: #729fff;*/
+    }
+/*隐藏文字*/
+    #news_hiddenC {
+        display: block;
+        color: black;
+        font-size: 18px;
+        padding-top: 2%;
+        padding-left: 1%;
+    }
+    /*关于*/
+    .about{
+        height: 1300px;
+    }
+    .about_Hw{
+        width: 100%;
+        /* border-bottom: 1px solid black; */
+        height: 3%;
+    }
+    .about_Hw h3{
+        padding-top: 5%;
+    }
+    .about_Hw ul li{
+        padding-top: 0%;
+    }
+    .about_All{
+        width: 95%;
+    }
+    .about_Hw ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .about_Hw ul li{
+        padding-top: 1%;
+        width: 24%;
+    }
+    .about_enter{
+         margin-top: 0%;
+        width: 100%;
+        height: 3%;
+        /*background-color: #3CBEDE;*/
+         margin-left:0%;
+    }
+    .about_img{
+        float:left;
+    }
+    .about_img ul{
+        display: flex;
+    }
+    .about_img ul li{
+        padding-left: 80%;
+    }
+    /*11111*/
+    .seamless_{
+        width: 100%;
+        left: 0;
+    }
+    .img_word{
+        width: 100%;
+        margin-left: 0;
+    }
+    .seamless_Shuffling{
+        width: 95%;
+        left:2%;
+        margin-left: 0%;
+    }
+    .seamless_content{
+        width: 100%;
+        height: 80%;
+        margin-top: 16%;
+        background-color: #DCE6EE;
+    }
+    .seamless_img{
+        width: 55%;
+        height: 50%;
+        left: 22%;
+        position: absolute;
+        margin-right: 0;
+    }
+    .seamless_d{
+        width: 80%;
+        text-align: center;
+        margin: 27% auto;
+    }
+    .seamless_d:hover{
+        text-decoration: underline;
+    }
+    #seam{
+        padding-top: 0;
+    }
+    #seamless{
+        display: none;
+    }
 }
+
+
 

@@ -11,7 +11,7 @@
                     }
                     //向上移动时内容出现
                     $(document).ready(function () {
-                        $("#outer-All").slideDown(500);
+                        $("#outer-All").slideDown("fast");
                     });
 
                 }
@@ -22,7 +22,7 @@
                     }
                     //实现导航条消失
                     $(document).ready(function () {
-                        $("#outer-All").slideUp(500);
+                        $("#outer-All").slideUp("fast");
                     })
                 }
             }
