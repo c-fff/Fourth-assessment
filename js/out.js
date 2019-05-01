@@ -21,9 +21,7 @@
                         outer_All.style.top = 0;
                     }
                     //实现导航条消失
-                    $(document).ready(function () {
                         $("#outer-All").slideUp("fast");
-                    })
                 }
             }
         };
