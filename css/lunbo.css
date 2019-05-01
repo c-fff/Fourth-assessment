@@ -5,10 +5,10 @@
 ul{
     list-style: none;
 }
-/*.carousel_All{*/
-    /*position: absolute;*/
-    /*height: 100%;*/
-/*}*/
+.carousel_All{
+    height: 100%;
+    cursor: pointer;
+}
 .carousel{
     position: relative;
     overflow: hidden;
@@ -25,15 +25,85 @@ ul{
 .img li{
     float: left;
 }
-.num{
+.carousel_add01{
     position: absolute;
-    bottom: 10px;
-    width: 100%;
+    width: 10%;
+    height: 26%;
+    top: 27%;
+    left: 7%;
+    /*background-color: #3CBEDE;*/
     text-align: center;
 }
+.carousel_add01>p{
+    font-size: 18px;
+    padding-top:12%;
+}
+.carousel_add01 i{
+    padding-left: 1%;
+    transition: all 1s;
+    display: inline-block;
+}
+.carousel_add01:hover i{
+    padding-left: 5%;
+}
+.carousel_add02{
+    position: absolute;
+    width: 4%;
+    height: 8%;
+    top: 30%;
+    left: 35.5%;
+    /*background-color: #de9389;*/
+    text-align: center;
+}
+.carousel_add02 p{
+    padding-top: 12px;
+    font-size: 18px;
+}
+.carousel_add02 i{
+    padding-left: 2%;
+    transition: all 0.5s;
+}
+.carousel_add02:hover i{
+    padding-left: 5%;
+}
+.carousel_add03{
+    position: absolute;
+    width: 7%;
+    height: 40%;
+    top: 15%;
+    left: 52.5%;
+    /*background-color: #a2bbde;*/
+    /*text-align: center;*/
+}
+.carousel_add03 h1{
+    color: #FFFFFF;
+    font-size: 41px;
+    padding-top: 3%;
+}
+.carousel_add03 p{
+    font-size: 26px;
+    color: floralwhite;
+    padding-top: 9%;
+}
+.carousel_add03 i{
+    padding-left: 2%;
+    transition: all 0.5s;
+}
+.carousel_add03:hover i{
+    padding-left: 5%;
+}
+/*按钮*/
+.num{
+    position: absolute;
+    bottom: 16%;
+    z-index: 200;
+    margin-left: 16%;
+    /* width: 100%; */
+    /* text-align: center; */
+}
 .num li{
-    width: 10px;
-    height: 10px;
+    width: 14px;
+    height: 14px;
     background:rgba(0,0,0,0.5);
     border-radius: 100%;
     display: inline-block;

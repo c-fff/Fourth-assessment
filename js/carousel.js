@@ -43,57 +43,59 @@ $(function(){
             $('.img').css({left:-($('.img li').length-1)*1366});
         }
         $('.img').animate({left:-i*1366},300);
+        $('.img').stop().animate({left:-i*1366},300);
+        $('.num li').eq(i).addClass('active').siblings().removeClass('active');
     });
 //鼠标放到圆点上图片进行切换
-    $('.mun li').mouseover(function(){
+    $('.num li').click(function(){
         //取得图片的索引
         var _index = $(this).index();
         //通过点击按钮获取相应的图片
         $('.img').animate({
             left:-_index*1366},150);
         //给相应的按钮添加上css
-        $('.mun li').eq(_index).addClass('active').siblings().removeClass('active');
+        $('.num li').eq(_index).addClass('active').siblings().removeClass('active');
     });
 //    通过定时器自动播放
-    timer=setInterval(function(){
-        i++;
-        //如果等于图片的张数回到第一张
-        if (i==$('.img li').length){
-            i=1;
-            $('.img li').css({left:0});
-        };
-        $('.img').animate({left:-i*1366},300);
-
-
-        if (i==$('.img li').length-1)
-        {
-               $('.num li').eq(0).addClass('active').siblings().removeClass('active');
-        }
-           //若不到第三张时每个图片对应按钮该有的样式
-        else{
-               $('.num li').eq(i).addClass('active').siblings().removeClass('active');
-        }
-    },2000);
-//鼠标移入时暂停动画移除时动画开始
-    $('.carousel').hover(function(){
-        clearInterval(timer);
-    },function(){
-        timer=setInterval(function(){
-               i++;
-               if (i==$('.img li').length) {
-                   i=1;
-                   $('.img').css({left:0});
-               };
-               $('.img').animate({left:-i*1366},300);
-
-
-               if (i==$('.img li').length-1) {
-                   $('.num li').eq(0).addClass('active').siblings().removeClass('active');
-               }else{
-                   $('.num li').eq(i).addClass('active').siblings().removeClass('active');
-               }
-           },2000)
-       })
+//     timer=setInterval(function(){
+//         i++;
+//         //如果等于图片的张数回到第一张
+//         if (i==$('.img li').length){
+//             i=1;
+//             $('.img li').css({left:0});
+//         };
+//         $('.img').animate({left:-i*1366},300);
+//
+//
+//         if (i==$('.img li').length-1)
+//         {
+//                $('.num li').eq(0).addClass('active').siblings().removeClass('active');
+//         }
+//            //若不到第三张时每个图片对应按钮该有的样式
+//         else{
+//                $('.num li').eq(i).addClass('active').siblings().removeClass('active');
+//         }
+//     },2000);
+// //鼠标移入时暂停动画移除时动画开始
+//     $('.carousel').hover(function(){
+//         clearInterval(timer);
+//     },function(){
+//         timer=setInterval(function(){
+//                i++;
+//                if (i==$('.img li').length) {
+//                    i=1;
+//                    $('.img').css({left:0});
+//                };
+//                $('.img').animate({left:-i*1366},300);
+//
+//
+//                if (i==$('.img li').length-1) {
+//                    $('.num li').eq(0).addClass('active').siblings().removeClass('active');
+//                }else{
+//                    $('.num li').eq(i).addClass('active').siblings().removeClass('active');
+//                }
+//            },2000)
+//        })
 });
 //第二个轮播图
 

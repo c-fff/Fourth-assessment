@@ -9,14 +9,14 @@
 /*}*/
 /*悬浮窗图片*/
 .suspension_Add{
-    width: 80%;
-    /*top: 23%;*/
+    width: 75%;
+    /* top: 23%; */
     background-color: #FFFFFF;
     border-radius: 8px;
     height: 180px;
     bottom: -6%;
     overflow: hidden;
-    margin-left: 9%;
+    margin-left: 11%;
     z-index: 500;
     position: absolute;
     box-shadow: 4px 7px 25px #EBEBEB;
@@ -40,21 +40,19 @@
 .personage_Ri{
     width:66%;
     height: 80%;
-    border-right: 1px solid black;
+    border-right: 1px solid #D4D4D4;
+    margin-top: 2%;
 }
-.personage_R{
-    width:66%;
-    height: 80%;
-}
+
 .personage_Ri h2{
-    padding-top: 18%;
+    padding-top: 12%;
 }
 .personage_Ri img{
     display: none;
 }
 .personage_Ri p{
     font-size: 18px;
-    color: #B3B3B3;
+    color: #666666;
 }
 /*.personage_border{*/
     /*border-left:1px solid #B3B3B3;*/
@@ -95,6 +93,9 @@
 .newline_blue:hover .newline_ img{
     margin-top: -10%;
 }
+.newline_ img{
+    transition: all 0.5s;
+}
 /*中间文字*/
 .newline_center{
     /*background-color: palegoldenrod;*/
@@ -116,10 +117,12 @@
 }
 #newline_pT img{
     margin-left: 4%;
+    transition: all 0.5s;
 }
 #newline_pS{
     font-size: 12px;
     padding-top: 34%;
+    color: #FFFFFF;
 }
 /*手机图片*/
 .newline_{
@@ -169,6 +172,7 @@
 }
 #last_p img{
     padding-left:2%;
+    transition: all 0.5s;
 }
 #last_p:hover img{
     padding-left:10%;
@@ -203,16 +207,20 @@
     cursor: pointer;
     bottom: 29%;
 }
-.folding_word p img {
+.folding_word ul li img {
     padding-left: 4%;
+    transition: all 0.5s;
 }
 .folding_word p{
     text-align: center;
     font-size: 22px;
     padding-top: 8%;
 }
-.folding_word p:hover img{
+.folding_word:hover ul li img{
     padding-left:10%;
+}
+.folding_word ul li{
+    display: inline-block;
 }
 /*第二个轮播图*/
 .seamless_Shuffling{
@@ -227,6 +235,7 @@
 ._Shuffling{
     width: 83%;
     margin: 2% auto;
+    cursor: pointer;
 }
 .content_Shuffling{
     width: 60%;
@@ -235,6 +244,20 @@
 }
 .content_Shuffling01{
     float: right;
+    margin-right: 3%;
+    width: 20%;
+}
+.content_Shuffling01 ul li{
+    display: inline-block;
+    /*width: 40%;*/
+}
+
+.content_Shuffling01 ul li img{
+    /*padding-left: %;*/
+    transition: all 0.1s;
+}
+.content_Shuffling01:hover ul li img{
+    padding-left: 10%;
 }
 .seamless_{
     width: 2000px;

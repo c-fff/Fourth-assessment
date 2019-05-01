@@ -26,17 +26,18 @@
     /* line-height: 47%; */
     background-color: #FFFFFF;
     cursor: pointer;
-    width: 100%;
+    width: 99%;
 }
 .glide_one p{
     padding-top: 8px;
     padding-left: 12px;
     padding-bottom: 8px;
 }
-.glide_one:hover{
+.glide_one>p:hover{
     text-decoration: underline;
 }
 .glide_two{
+    width: 99%;
     align-items: center;
     margin-top: 4px;
      border-bottom: 1px solid black;
@@ -66,7 +67,7 @@
     padding-bottom: 8px;
     font-size: 20px;
 }
-.glide_hidden:hover{
+.glide_hiddenText:hover{
     text-decoration: underline;
 }
 .glide_hiddenText{
@@ -89,7 +90,7 @@
     padding-bottom: 8px;
     font-size: 20px;
 }
-.glide_hiddenTwo:hover{
+.glide_hiddenText:hover{
     text-decoration: underline;
 }
 .glide_hiddenTwo h3{
@@ -98,12 +99,12 @@
     padding-top: 5px;
     padding-bottom: 5px;
 }
-.glide_hiddenTwo:hover{
-    text-decoration: underline;
-}
+/*.glide_hiddenTwo:hover{*/
+    /*text-decoration: underline;*/
+/*}*/
 /*固定菜单div*/
 .articleTwo{
-    width: 100%;
+    width: 99%;
     margin-top: 8px;
     height: 111px;
     /*background-color: #abcfee;*/

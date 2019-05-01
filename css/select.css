@@ -3,10 +3,12 @@
     padding: 0;
 }
 #tab_All{
-    display: none;
     position: fixed;
     width: 100%;
-    left: 0px;
+    left: 0;
+    /* top: 102px; */
+    /*top: 14%;*/
+    display: none;
 }
 #nav{
     height: 50px;
@@ -31,6 +33,9 @@
     width: 100px;
     color: #929292;
 }
+#nav li:hover{
+    border-bottom: 4px solid #F66F6A;
+}
 /*#vav li:hover{*/
     /**/
 /*}*/
@@ -39,7 +44,6 @@
     height: 420px;
     background-color: #929292;
 }
-
 .tab_left{
     float: left;
     width: 73%;
@@ -53,19 +57,17 @@
 }
 .tab_contentLeft{
     width: 16%;
-    margin-left: 1%;
-    /*background-color: #8e8e86;*/
+    /* background-color: #8e8e86; */
     height: 78%;
-    margin-top: 1%;
-}
-#excursion{
-    margin-left: 7%;
+    margin-top: 3%;
+    margin-left: 2%;
 }
 .tab_contentLeft h3{
     font-size: 20px;
 }
 .tab_contentLeft p{
     height: 11%;
+    padding-top: 7%;
 }
 .tab_contentLeft p:hover{
     text-decoration: underline;
@@ -96,11 +98,12 @@
     height: 80%;
 }
 .tab_rightAdd h3{
-    padding-top: 4%;
+    padding-top: 11%;
     font-size: 20px;
 }
 .tab_rightAdd p{
     height: 11%;
+    padding-top: 4%;
 }
 .tab_rightAdd p:hover{
     text-decoration: underline;
@@ -111,8 +114,10 @@
 .tab_rightAdd p:hover img{
     display: inline-block;
 }
-
-.tab_bottom #span-two:hover{
+.span-two{
+    color: #F66F6A;
+}
+.tab_bottom .span-two:hover{
     color: #F66F6A;
     text-decoration: underline;
     cursor: pointer;
@@ -144,10 +149,12 @@
     /*background-color: #8e8e86;*/
 }
 ._middle h3{
+    padding-top: 5%;
     font-size: 20px;
 }
 ._middle p{
     height: 11%;
+    padding-top: 11%;
 }
 ._middle p:hover{
     text-decoration: underline;
@@ -207,10 +214,18 @@
 .story_img{
     width: 20%;
     height: 27%;
-    margin-left: 1%;
+    margin-left: 0.9%;
     /* margin: 0 auto; */
     position: absolute;
     z-index: 500;
+    border-radius: 6px;
+    transition: all 0.1s;
+}
+.story_img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    /*border-radius-topright: 6px;*/
 }
 .story_box{
     margin-top: 29%;
@@ -235,15 +250,25 @@
     padding-top: 4%;
     font-size: 27px;
 }
+.story-bottom{
+    padding-top: 26%;
+    font-size: 21px;
+}
+.story-bottom img{
+    padding-left: 2%;
+    transition: all 0.2s;
+}
+.story_book:hover .story-bottom img{
+    padding-left: 6%;
+}
+
+
+
+/*近b期新闻*/
 #news_hiddenC{
     display: none;
     padding-top: 0;
 }
-#story_bottom{
-    padding-top: 26%;
-    font-size: 26px;
-}
-/*近期新闻*/
 .news{
     width: 90%;
     height: 600px;
@@ -282,11 +307,14 @@
     background-color: #DDE6ED;
     border-radius: 6px;
 }
+.news_c img{
+    transition: all 0.1s;
+}
+.news_c:hover img{
+    padding-left: 5%;
+}
 .news_c span{
-    border-right: 2px solid #666666;
-    padding-left: 1%;
-    /*padding-right: 2%;*/
-
+    color: #666666;
 }
 .news_c p{
     padding-top: 8%;
@@ -306,16 +334,16 @@
 ul{
     list-style: none;
 }
-#T{
+.T{
     padding-top: 10%;
 }
-#s{
+.s{
     font-size: 20px;
 }
-#s:hover{
+.s:hover{
     text-decoration: underline;
 }
-#color{
+.color{
     color: #666666;
 }
 /*关于*/
@@ -343,8 +371,12 @@ ul{
     margin-right: 5%;
     /*background-color: #3CBEDE;*/
 }
+.about_img ul{
+    /*background-color: aliceblue;*/
+    width: 56%;
+}
 .about_img li{
-    padding-top: 15%;
+    padding-top: 38%;
 }
 
 .about_Hw{
@@ -355,10 +387,13 @@ ul{
 }
 .about_Hw h3{
     padding-top: 20%;
-    font-size: 28px;
+    font-size: 21px;
 }
 .about_Hw h3:hover{
     text-decoration: underline;
+}
+.about_Hw img{
+    transition: all 0.2s;
 }
 .about_Hw:hover img{
     padding-left: 5%;
@@ -368,6 +403,14 @@ ul{
 }
 .about_Hw ul li:hover{
     text-decoration: underline;
+}
+.about_Hw ul li:hover i{
+    opacity: 1;
+}
+.about_Hw i{
+    opacity: 0;
+    transition: all 0.5s;
+    padding-left:3%;
 }
 
 .about_enter{
@@ -379,7 +422,7 @@ ul{
 }
 .about_enter h3{
     padding-top: 2%;
-    font-size: 28px;
+    font-size: 21px;
 }
 .about_enter ul{
     display: flex;
@@ -398,6 +441,14 @@ ul{
 }
 .about_enter ul li:hover{
     text-decoration: underline;
+}
+.about_enter ul li:hover i{
+    opacity: 1;
+}
+.about_enter i{
+    opacity: 0;
+    transition: all 0.5s;
+    padding-left:3%;
 }
 
 

@@ -162,7 +162,7 @@
     }
     /*第一幅图片内容*/
     .newline_blue{
-        width: 95%;
+        width: 100%;
         height: 80%;
         position: relative;
         background-color: #3CBEDE;
@@ -178,7 +178,7 @@
     .newline_{
         position: absolute;
         /* top: 14%; */
-        right: 4%;
+        right: 10%;
         width: 30%;
     }
     /*第二幅图片*/
@@ -227,7 +227,7 @@
         margin-top:0;
     }
     .story_{
-        top: 0%;
+        top: 18%;
         height: 0%;
         /*background-color: slategrey;*/
         width: 50%;
@@ -241,6 +241,32 @@
     }
     ._Shuffling{
         width: 100%;
+    }
+    .footer{
+        background-color: #F0F0F0;
+    }
+    .footer_left p{
+        color: #000;
+    }
+    .footer_right p{
+        color: black;
+    }
+    .footer_right span{
+        color: #000;
+    }
+    .story-bottom{
+        display: none;
+    }
+    .content_Shuffling01{
+        display: none;
+    }
+    .footer_left{
+        width: 53%;
+        margin-left: 0;
+    }
+    .footer_right{
+        width: 40%;
+        margin-right: 0;
     }
 }
 /*2222222222*/
@@ -264,7 +290,7 @@
     /*}*/
 /*}*/
 /*换行图片*/
-@media screen and (max-width: 665px){
+@media screen and (max-width: 760px){
     /*悬浮块*/
     .suspension_Add{
         bottom: -8%;
@@ -291,6 +317,12 @@
         float: right;
         display: inline-block;
     }
+    .personage_Ri{
+        width: 8%;
+        margin-top: 9%;
+        border-right: none;
+    }
+
     /*第二个图片*/
     .newline_picturesT {
         width: 100%;
@@ -445,6 +477,17 @@
         padding-top: 0;
     }
     #seamless{
+        display: none;
+    }
+    .footer{
+        height: 100%;
+        background-color: #F0F0F0;
+    }
+
+    .content_Shuffling01{
+        display: none;
+    }
+    .story-bottom{
         display: none;
     }
 }

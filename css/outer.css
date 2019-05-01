@@ -56,24 +56,30 @@ body{
     /* width: 60%; */
     flex: 1;
     /*overflow: hidden;*/
+    align-items: center;
     display: flex;
     justify-content: space-between;
 }
 #outer_middleAddone{
-    width: 25%;
+    top: 25px;
+    overflow: hidden;
     height: 100%;
-    line-height: 75px;
     position: relative;
 }
 #outer_middleAdd{
+    overflow: hidden;
     height: 100%;
-    line-height: 75px;
+    top: 20px;
+    /* line-height: 75px; */
     position: relative;
+    /* background-color: #3CBEDE; */
+
 }
 #out-middleOne{
     display: inline-block;
     cursor: pointer;
     font-size: 18px;
+    overflow: hidden;
 }
 #out-middleOne:hover{
     color: #F66F6A;
@@ -101,7 +107,7 @@ body{
 }
 #_img{
     width: 20%;
-    height: 75%;
+    /*height: 75%;*/
 }
 .outer-end p{
     display: inline-block;
@@ -134,12 +140,14 @@ body{
 #External_hidden{
     position: fixed;
     width: 100%;
-    left: 0px;
+    left: 0;
+    /* top: 102px; */
+    /*top: 14%;*/
     display: none;
 }
 .outer-hiddenAll{
     height: 420px;
-    background-color: pink;
+    /*background-color: pink;*/
     display: flex;
     flex-direction: row;
 }
@@ -209,15 +217,18 @@ body{
     background-color: #EBEBEB;
 }
 .center{
+    /*margin-top: 15%; *!*/
     width: 80%;
     /*background-color: pink;*/
-    height: 100%;
-    margin:0 auto;
+    /* height: 100%; */
+    margin: 0 auto;
 }
 .center h2{
-    font-size: 18px;
+    font-size: 20px;
+    padding-top: 15%;
 }
 .center p{
+    padding-top: 6%;
     cursor: pointer;
     height: 37px;
 }
@@ -259,9 +270,13 @@ body{
     opacity: 1;
 }
 /*隐藏内容右边底部*/
+#span-two{
+    color:  #F66F6A;
+}
 .outer_bottom #span-two:hover{
     color: #F66F6A;
     text-decoration: underline;
+    cursor: pointer;
     cursor: pointer;
 }
 .outer_bottom .span-one:hover{
