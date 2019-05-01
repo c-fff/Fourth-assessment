@@ -354,6 +354,10 @@
     .newline_{
         right: 25%;
     }
+    .newline_ img{
+        width: 100%;
+        height: 100%;
+    }
 
 /*折叠屏手机*/
     .folding_Screen{
