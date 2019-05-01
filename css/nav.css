@@ -348,7 +348,7 @@
     .folding_word p{
         display: none;
     }
-    .folding_word img{
+    .folding_word>img{
         width:100%;
     }
     .newline_{
@@ -358,12 +358,14 @@
 /*折叠屏手机*/
     .folding_Screen{
         width: 100%;
-
     }
     /*新闻*/
     .news{
         width: 100%;
         height: 1150px;
+    }
+    .news_c{
+        height: 72%;
     }
     .news_All{
         width: 100%;
