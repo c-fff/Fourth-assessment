@@ -56,46 +56,46 @@ $(function(){
         //给相应的按钮添加上css
         $('.num li').eq(_index).addClass('active').siblings().removeClass('active');
     });
-//    通过定时器自动播放
-//     timer=setInterval(function(){
-//         i++;
-//         //如果等于图片的张数回到第一张
-//         if (i==$('.img li').length){
-//             i=1;
-//             $('.img li').css({left:0});
-//         };
-//         $('.img').animate({left:-i*1366},300);
-//
-//
-//         if (i==$('.img li').length-1)
-//         {
-//                $('.num li').eq(0).addClass('active').siblings().removeClass('active');
-//         }
-//            //若不到第三张时每个图片对应按钮该有的样式
-//         else{
-//                $('.num li').eq(i).addClass('active').siblings().removeClass('active');
-//         }
-//     },2000);
-// //鼠标移入时暂停动画移除时动画开始
-//     $('.carousel').hover(function(){
-//         clearInterval(timer);
-//     },function(){
-//         timer=setInterval(function(){
-//                i++;
-//                if (i==$('.img li').length) {
-//                    i=1;
-//                    $('.img').css({left:0});
-//                };
-//                $('.img').animate({left:-i*1366},300);
-//
-//
-//                if (i==$('.img li').length-1) {
-//                    $('.num li').eq(0).addClass('active').siblings().removeClass('active');
-//                }else{
-//                    $('.num li').eq(i).addClass('active').siblings().removeClass('active');
-//                }
-//            },2000)
-//        })
+   // 通过定时器自动播放
+    timer=setInterval(function(){
+        i++;
+        //如果等于图片的张数回到第一张
+        if (i==$('.img li').length){
+            i=1;
+            $('.img li').css({left:0});
+        };
+        $('.img').animate({left:-i*1366},300);
+
+
+        if (i==$('.img li').length-1)
+        {
+               $('.num li').eq(0).addClass('active').siblings().removeClass('active');
+        }
+           //若不到第三张时每个图片对应按钮该有的样式
+        else{
+               $('.num li').eq(i).addClass('active').siblings().removeClass('active');
+        }
+    },2000);
+//鼠标移入时暂停动画移除时动画开始
+    $('.carousel').hover(function(){
+        clearInterval(timer);
+    },function(){
+        timer=setInterval(function(){
+               i++;
+               if (i==$('.img li').length) {
+                   i=1;
+                   $('.img').css({left:0});
+               };
+               $('.img').animate({left:-i*1366},300);
+
+
+               if (i==$('.img li').length-1) {
+                   $('.num li').eq(0).addClass('active').siblings().removeClass('active');
+               }else{
+                   $('.num li').eq(i).addClass('active').siblings().removeClass('active');
+               }
+           },2000)
+       })
 });
 //第二个轮播图
 
